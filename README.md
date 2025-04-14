@@ -1,24 +1,16 @@
 # MJ API - Assistant Integration
 
-Ce module expose des fonctions utilisables par un Assistant MJ Discord connecté à Foundry VTT (WFRP4e).
+Module Foundry pour assistant MJ Discord.
 
-## Fonctions disponibles
+## Routes REST disponibles
 
-- `getActorData(actorName)`
-- `getSkillValue(actorName, skillName)`
-- `rollSkill(actorName, skillName)`
-- `getInventory(actorName)`
-- `updateActorField(actorName, path, value)`
-- `getJournals()`
-- `sendToChat(message)`
+GET:
+- /mj-api/ping
+- /mj-api/getActorData?name=NomPerso
+- /mj-api/getSkillValue?actor=Nom&skill=Compétence
+- /mj-api/getInventory?name=NomPerso
+- /mj-api/getJournals
 
-## Installation
-
-Dans Foundry VTT :
-1. Aller dans **Setup > Add-on Modules**
-2. Choisir **Install Module**
-3. Coller l'URL suivante dans le champ **Manifest** :
-
-```
-https://raw.githubusercontent.com/coxcedric/mj-api/main/module.json
-```
+POST:
+- /mj-api/sendToChat — { "message": "..." }
+- /mj-api/updateActorField — { "actor": "...", "path": "...", "value": ... }

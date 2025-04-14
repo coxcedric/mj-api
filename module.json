@@ -1,8 +1,8 @@
 {
   "name": "mj-api",
   "title": "MJ API - Assistant Integration",
-  "description": "Expose des fonctions MJ utilisables par un assistant Discord pour WFRP4e",
-  "version": "1.0.0",
+  "description": "Expose des fonctions MJ utilisables par un assistant Discord pour WFRP4e, via Socketlib et REST.",
+  "version": "1.1.0",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "12",
   "author": "coxcedric",
@@ -10,9 +10,6 @@
     "scripts/module.js"
   ],
   "socket": true,
-  "esmodules": [],
-  "styles": [],
-  "languages": [],
   "url": "https://github.com/coxcedric/mj-api",
   "manifest": "https://raw.githubusercontent.com/coxcedric/mj-api/main/module.json",
   "download": "https://github.com/coxcedric/mj-api/archive/refs/heads/main.zip",
